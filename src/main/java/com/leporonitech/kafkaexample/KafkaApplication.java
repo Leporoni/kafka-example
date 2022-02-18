@@ -17,7 +17,9 @@ public class KafkaApplication {
 	@Bean
 	CommandLineRunner commandLineRunner(KafkaTemplate<String, String> kafkaTemplate) {
 		return args -> {
-			kafkaTemplate.send("leporonitech", "Hello Kafka");
+			for (int i = 0; i < 100; i++) {
+				kafkaTemplate.send("leporonitech", "Hello Kafka" + i);
+			}
 		};
 	}
 }
