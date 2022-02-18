@@ -11,6 +11,6 @@ public class KafkaListeners {
             groupId = "groupId"
     )
     void listener(String data) {
-        System.out.println("Listener received: " + data + " FORZA ITALIA!!!");
+        System.out.println("Listener received: " + data + " ...FORZA ITALIA - SEE YOU ON QATAR 2022...");
     }
 }
